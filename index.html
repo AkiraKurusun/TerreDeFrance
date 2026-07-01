@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terre de France | Home</title>
-  <meta name="description" content="Terre de France: an Earth Science project exploring the geophysical processes that have shaped France.">
+  <meta name="description" content="Terre de France: an Earth Science project exploring the The Geophysical processes that have shaped France.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -18,18 +19,25 @@
       <a href="index.html" class="site-title">
         <span class="flag-dot" aria-hidden="true"></span>
         Terre de France
-        <span class="subtitle">Geophysical Processes of France</span>
+        <span class="subtitle">The Geophysical Processes of France</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">&#9776; Menu</button>
       <nav class="main-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="maps-cartography.html">Maps &amp; Cartography</a></li>
-          <li><a href="plate-tectonics.html">Plate Tectonics</a></li>
-          <li><a href="weathering-erosion.html">Weathering &amp; Erosion</a></li>
-          <li><a href="fluvial-coastlines.html">Fluvial &amp; Coastal Processes</a></li>
-          <li><a href="climate-biomes.html">Climate &amp; Biomes</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+              Topics <span class="caret" aria-hidden="true">&#9662;</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="maps-cartography.html">Maps &amp; Cartography</a></li>
+              <li><a href="plate-tectonics.html">Plate Tectonics</a></li>
+              <li><a href="weathering-erosion.html">Weathering &amp; Erosion</a></li>
+              <li><a href="fluvial-coastlines.html">Fluvial &amp; Coastal Processes</a></li>
+              <li><a href="climate-biomes.html">Climate &amp; Biomes</a></li>
+            </ul>
+          </li>
           <li><a href="references.html">References</a></li>
         </ul>
       </nav>
@@ -41,47 +49,44 @@
       <div>
         <div class="page-header" style="border-bottom:none; padding-bottom:0;">
           <h1>Terre de France</h1>
-          <p class="lede">An Earth Science project on the geophysical processes that shape France.</p>
+          <p class="lede">An Earth Science project on the The Geophysical processes that shape France.</p>
         </div>
-        <p>
-          France sits at a crossroads of European geology and culture &mdash; a single
-          country whose landscape stretches from Atlantic beaches and Mediterranean
-          coastline to the folded peaks of the Alps and Pyrenees. This site tracks a
-          semester-long study of the physical processes at work across that
-          landscape, from mapmaking and plate tectonics to weathering, rivers,
-          coastlines, and climate.
-        </p>
       </div>
+      <figure class="hero-figure">
+        <img src="images/Aerial_photography_of_the_city.jpg" alt="Aerial view of Paris looking toward the Eiffel Tower along the Seine River.">
+        <figcaption>Photo: Dima Iakymuk / Unsplash</figcaption>
+      </figure>
     </div>
 
     <section aria-labelledby="overview-heading">
-      <h2 id="overview-heading">Overview of France</h2>
+      <h2 id="overview-heading">Brief Overview of France</h2>
       <p>
-        <strong>Historically</strong>, France has been shaped by waves of settlement
+        <strong>Historically</strong>: France has been shaped by waves of settlement
         and rule &mdash; from Roman Gaul and medieval kingdoms to the French
         Revolution of 1789, which reshaped not just France but the political
         landscape of the modern world. Its long history as a unified nation-state
         has left a dense layer of architecture, art, and institutions still visible
-        today.
+        today (Encyclopaedia Britannica, n.d.-a).
       </p>
       <p>
-        <strong>Culturally</strong>, France is known for its contributions to art,
-        philosophy, cuisine, and fashion, and for a strong regional diversity &mdash;
+        <strong>Culturally</strong>: France is known for its contributions to art,
+        philosophy, cuisine, and fashion, and for a strong regional diversity. Areas such as
         Brittany, Provence, Alsace, and Corsica each carry distinct languages,
-        foods, and traditions within one country.
+        foods, and traditions within one country (Encyclopaedia Britannica, n.d.-b).
       </p>
       <p>
-        <strong>Socially</strong>, France is a republic built around the ideals of
+        <strong>Socially</strong>: France is a republic built around the ideals of
         <em>liberté, égalité, fraternité</em> (liberty, equality, fraternity), with a
-        strong tradition of civic life, public education, and social services.
+        strong tradition of civic life, public education, and social services
+        (Élysée, n.d.).
       </p>
       <p>
-        <strong>Economically</strong>, France is one of the largest economies in
+        <strong>Economically</strong>: France is one of the largest economies in
         Europe, with major industries in agriculture, aerospace, luxury goods,
         tourism, and nuclear energy. Its geography plays a direct role here too:
         fertile river basins support agriculture, mountain ranges support hydropower
         and winter tourism, and long coastlines support fishing, shipping, and beach
-        tourism.
+        tourism (Encyclopaedia Britannica, n.d.-c).
       </p>
     </section>
 
@@ -114,7 +119,8 @@
 
   <footer class="site-footer">
     <p>Terre de France &mdash; an Earth Science project. Content updated weekly.</p>
-    <p class="footer-disclaimer">This website was created with the assistance of Claude, an AI assistant made by Anthropic.</p>
+    <p class="footer-disclaimer">This website was created with the assistance of Claude Code, an AI assistant made by Anthropic.</p>
+    <p class="footer-disclaimer">Anthropic. (2026). Claude Code (Sonnet 5 version) [Large language model]. https://claude.com/claude-code</p>
   </footer>
 
   <script src="js/main.js"></script>

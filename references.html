@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -18,18 +19,25 @@
       <a href="index.html" class="site-title">
         <span class="flag-dot" aria-hidden="true"></span>
         Terre de France
-        <span class="subtitle">Geophysical Processes of France</span>
+        <span class="subtitle">The Geophysical Processes of France</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">&#9776; Menu</button>
       <nav class="main-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="maps-cartography.html">Maps &amp; Cartography</a></li>
-          <li><a href="plate-tectonics.html">Plate Tectonics</a></li>
-          <li><a href="weathering-erosion.html">Weathering &amp; Erosion</a></li>
-          <li><a href="fluvial-coastlines.html">Fluvial &amp; Coastal Processes</a></li>
-          <li><a href="climate-biomes.html">Climate &amp; Biomes</a></li>
+          <li class="has-dropdown">
+            <button class="dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+              Topics <span class="caret" aria-hidden="true">&#9662;</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="maps-cartography.html">Maps &amp; Cartography</a></li>
+              <li><a href="plate-tectonics.html">Plate Tectonics</a></li>
+              <li><a href="weathering-erosion.html">Weathering &amp; Erosion</a></li>
+              <li><a href="fluvial-coastlines.html">Fluvial &amp; Coastal Processes</a></li>
+              <li><a href="climate-biomes.html">Climate &amp; Biomes</a></li>
+            </ul>
+          </li>
           <li><a href="references.html">References</a></li>
         </ul>
       </nav>
@@ -42,41 +50,95 @@
       <p class="lede">Sources cited across this project, in APA format. Updated weekly as research is added.</p>
     </div>
 
-    <section aria-labelledby="format-heading">
-      <h2 id="format-heading">Format Reminder</h2>
-      <p>Each entry below follows APA 7th edition style:</p>
-      <ul>
-        <li><strong>Book:</strong> Author, A. A. (Year). <em>Title of work</em>. Publisher.</li>
-        <li><strong>Journal article:</strong> Author, A. A. (Year). Title of article. <em>Title of Journal, volume</em>(issue), page range. https://doi.org/xxxx</li>
-        <li><strong>Website:</strong> Author, A. A. (Year, Month Day). <em>Title of page</em>. Site Name. URL</li>
-      </ul>
+    <section aria-labelledby="home-refs-heading">
+      <h2 id="home-refs-heading">Home</h2>
+      <ol class="reference-list">
+        <!-- Copy this <li> for each new source on this page, then fill in the brackets. -->
+        <li>
+          <p class="reference-entry">Encyclopaedia Britannica. (n.d.-a). <em>History of France</em>. Retrieved July 1, 2026, from https://www.britannica.com/topic/history-of-France</p>
+        </li>
+        <li>
+          <p class="reference-entry">Encyclopaedia Britannica. (n.d.-b). <em>France &ndash; Cultural life</em>. Retrieved July 1, 2026, from https://www.britannica.com/place/France/Cultural-life</p>
+        </li>
+        <li>
+          <p class="reference-entry">Encyclopaedia Britannica. (n.d.-c). <em>France &ndash; Economy</em>. Retrieved July 1, 2026, from https://www.britannica.com/place/France/Economy</p>
+        </li>
+        <li>
+          <p class="reference-entry">&Eacute;lys&eacute;e. (n.d.). <em>Liberty, equality, fraternity</em>. La Pr&eacute;sidence de la R&eacute;publique. Retrieved July 1, 2026, from https://www.elysee.fr/en/french-presidency/liberty-equality-fraternity</p>
+        </li>
+        <li>
+          <p class="reference-entry">Iakymuk, D. (2019, December 5). <em>Aerial photography of the city</em> [Photograph]. Unsplash. https://unsplash.com/es/fotos/fotografia-aerea-de-la-ciudad-zc7EnDmfkao</p>
+        </li>
+      </ol>
     </section>
 
-    <section aria-labelledby="list-heading">
-      <h2 id="list-heading">Reference List</h2>
-      <p class="placeholder-note">Placeholder &mdash; add one entry per source, in alphabetical order by author, as research is added each week.</p>
-
+    <section aria-labelledby="about-refs-heading">
+      <h2 id="about-refs-heading">About</h2>
       <ol class="reference-list">
+        <!-- Copy this <li> for each new source on this page, then fill in the brackets. -->
         <li>
-          <p class="reference-entry example">
-            <span class="tag">example</span>
-            Author, A. A. (Year). <em>Title of the source in sentence case</em>. Publisher or Site Name. URL or DOI
-          </p>
+          <p class="reference-entry">Grillot, E. (2020, January 16). <em>Snow-capped mountain</em> [Photograph]. Unsplash. https://unsplash.com/photos/snow-capped-mountain-FAKs70apdtI</p>
         </li>
         <li>
-          <p class="reference-entry">[Week 1 &mdash; Author, A. A. (Year). Title. Source. URL]</p>
+          <p class="reference-entry">Lambert, E. (2024, June 27). <em>15 Interesting Mont Blanc Facts</em>. Macsadventure.com; Macs Adventure. https://www.macsadventure.com/us/blog/15-interesting-mont-blanc-facts/</p>
         </li>
         <li>
-          <p class="reference-entry">[Week 2 &mdash; Author, A. A. (Year). Title. Source. URL]</p>
+          <p class="reference-entry">Rakozy, G. (2015, October 12). <em>Silhouette photography of person</em> [Photograph]. Unsplash. https://unsplash.com/photos/silhouette-photography-of-person-oMpAz-DN-9I</p>
         </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="maps-refs-heading">
+      <h2 id="maps-refs-heading">Maps &amp; Cartography</h2>
+      <p class="placeholder-note">Placeholder &mdash; add one entry per source, in alphabetical order by author, as research is added each week.</p>
+      <ol class="reference-list">
+        <!-- Copy this <li> for each new source on this page, then fill in the brackets. -->
         <li>
-          <p class="reference-entry">[Week 3 &mdash; Author, A. A. (Year). Title. Source. URL]</p>
+          <p class="reference-entry">[Author, A. A. (Year). <em>Title of source</em>. Publisher or Site Name. URL or DOI]</p>
         </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="tectonics-refs-heading">
+      <h2 id="tectonics-refs-heading">Plate Tectonics</h2>
+      <p class="placeholder-note">Placeholder &mdash; add one entry per source, in alphabetical order by author, as research is added each week.</p>
+      <ol class="reference-list">
+        <!-- Copy this <li> for each new source on this page, then fill in the brackets. -->
         <li>
-          <p class="reference-entry">[Week 4 &mdash; Author, A. A. (Year). Title. Source. URL]</p>
+          <p class="reference-entry">[Author, A. A. (Year). <em>Title of source</em>. Publisher or Site Name. URL or DOI]</p>
         </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="weathering-refs-heading">
+      <h2 id="weathering-refs-heading">Weathering &amp; Erosion</h2>
+      <p class="placeholder-note">Placeholder &mdash; add one entry per source, in alphabetical order by author, as research is added each week.</p>
+      <ol class="reference-list">
+        <!-- Copy this <li> for each new source on this page, then fill in the brackets. -->
         <li>
-          <p class="reference-entry">[Week 5 &mdash; Author, A. A. (Year). Title. Source. URL]</p>
+          <p class="reference-entry">[Author, A. A. (Year). <em>Title of source</em>. Publisher or Site Name. URL or DOI]</p>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="fluvial-refs-heading">
+      <h2 id="fluvial-refs-heading">Fluvial &amp; Coastal Processes</h2>
+      <p class="placeholder-note">Placeholder &mdash; add one entry per source, in alphabetical order by author, as research is added each week.</p>
+      <ol class="reference-list">
+        <!-- Copy this <li> for each new source on this page, then fill in the brackets. -->
+        <li>
+          <p class="reference-entry">[Author, A. A. (Year). <em>Title of source</em>. Publisher or Site Name. URL or DOI]</p>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="climate-refs-heading">
+      <h2 id="climate-refs-heading">Climate &amp; Biomes</h2>
+      <p class="placeholder-note">Placeholder &mdash; add one entry per source, in alphabetical order by author, as research is added each week.</p>
+      <ol class="reference-list">
+        <!-- Copy this <li> for each new source on this page, then fill in the brackets. -->
+        <li>
+          <p class="reference-entry">[Author, A. A. (Year). <em>Title of source</em>. Publisher or Site Name. URL or DOI]</p>
         </li>
       </ol>
     </section>
@@ -84,7 +146,8 @@
 
   <footer class="site-footer">
     <p>Terre de France &mdash; an Earth Science project. Content updated weekly.</p>
-    <p class="footer-disclaimer">This website was created with the assistance of Claude, an AI assistant made by Anthropic.</p>
+    <p class="footer-disclaimer">This website was created with the assistance of Claude Code, an AI assistant made by Anthropic.</p>
+    <p class="footer-disclaimer">Anthropic. (2026). Claude Code (Sonnet 5 version) [Large language model]. https://claude.com/claude-code</p>
   </footer>
 
   <script src="js/main.js"></script>

@@ -17,7 +17,32 @@ document.addEventListener("DOMContentLoaded", function () {
     var linkPage = link.getAttribute("href");
     if (linkPage === currentPage) {
       link.setAttribute("aria-current", "page");
+      var parentDropdown = link.closest(".has-dropdown");
+      if (parentDropdown) {
+        parentDropdown.querySelector(".dropdown-toggle").classList.add("active-parent");
+      }
     }
+  });
+
+  // Dropdown menu (e.g. "Topics") opens on hover/focus via CSS; keep aria-expanded in sync.
+  document.querySelectorAll(".has-dropdown").forEach(function (item) {
+    var dropdownToggle = item.querySelector(".dropdown-toggle");
+    if (!dropdownToggle) return;
+
+    item.addEventListener("mouseenter", function () {
+      dropdownToggle.setAttribute("aria-expanded", "true");
+    });
+    item.addEventListener("mouseleave", function () {
+      dropdownToggle.setAttribute("aria-expanded", "false");
+    });
+    item.addEventListener("focusin", function () {
+      dropdownToggle.setAttribute("aria-expanded", "true");
+    });
+    item.addEventListener("focusout", function () {
+      if (!item.contains(document.activeElement)) {
+        dropdownToggle.setAttribute("aria-expanded", "false");
+      }
+    });
   });
 
   // Header gains a background/shadow once the page has scrolled a bit.
