@@ -284,16 +284,16 @@ h3 {
 /* ---------- Hero (home page) ---------- */
 .hero {
   position: relative;
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 2rem;
-  align-items: center;
   margin-bottom: 2.5rem;
   padding: 2.75rem;
   border-radius: var(--radius-lg);
   background: linear-gradient(155deg, var(--color-blue-tint) 0%, var(--color-bg) 55%, var(--color-red-tint) 100%);
   overflow: hidden;
   isolation: isolate;
+}
+
+.hero > div {
+  max-width: 640px;
 }
 
 .hero::before,
@@ -323,32 +323,6 @@ h3 {
 
 .hero .page-header h1 {
   font-size: clamp(2.4rem, 5.5vw, 3.6rem);
-}
-
-.hero figure {
-  margin: 0;
-  background: var(--color-panel);
-  border-radius: var(--radius-lg);
-  padding: 0.6rem;
-  box-shadow: var(--shadow-lg);
-  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
-}
-
-.hero figure:hover {
-  transform: translateY(-4px) rotate(-0.4deg);
-  box-shadow: var(--shadow-lg), 0 0 0 1px rgba(0, 85, 164, 0.08);
-}
-
-.hero figure img {
-  border-radius: calc(var(--radius-lg) - 6px);
-}
-
-.hero figcaption {
-  font-family: var(--font-ui);
-  font-size: 0.82rem;
-  color: var(--color-muted);
-  text-align: center;
-  margin-top: 0.6rem;
 }
 
 /* ---------- Cards / grids ---------- */
@@ -542,7 +516,6 @@ h3 {
 /* ---------- Responsive ---------- */
 @media (max-width: 700px) {
   .hero {
-    grid-template-columns: 1fr;
     padding: 1.75rem;
   }
 
