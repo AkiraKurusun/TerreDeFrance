@@ -572,6 +572,41 @@ h3 {
   margin: 0.5rem 0 1rem;
 }
 
+/* ---------- Map grid (Maps & Cartography page) ---------- */
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.map-card {
+  background: var(--color-panel);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.map-card h3 {
+  margin-top: 0;
+}
+
+.map-placeholder {
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff7e6;
+  border: 1px dashed #c9a34e;
+  border-radius: var(--radius);
+  color: #6b5215;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  padding: 1rem;
+  margin-bottom: 0.85rem;
+}
+
 /* ---------- Research placeholder pages ---------- */
 .research-status {
   display: inline-block;
