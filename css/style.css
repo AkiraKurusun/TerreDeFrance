@@ -625,6 +625,31 @@ h3 {
   object-fit: contain;
 }
 
+.map-block-figure--top img {
+  object-position: top;
+}
+
+.map-block-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.map-block-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.map-block-gallery figcaption {
+  margin-top: 0.4rem;
+}
+
 .figure-note {
   font-family: var(--font-ui);
   font-size: 0.82rem;
@@ -786,6 +811,10 @@ h3 {
 
   .hero-figure {
     max-width: 100%;
+  }
+
+  .map-block-gallery {
+    grid-template-columns: 1fr;
   }
 
   .nav-toggle {
